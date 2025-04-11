@@ -1,0 +1,47 @@
+.home-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 1000px;
+  max-width: 1000px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: 50px;
+  margin: var(--header-offset-padding) auto 100px;
+}
+.self-portrait-image {
+  border-radius: 100px;
+  justify-content: flex-start;
+  min-width: 450px;
+  max-width: 450px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 0;
+}
+.who-am-i-container{
+  display: flex;
+  min-width: 400px;
+  max-width: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.who-am-i-title {
+  color: var(--color-font-title);
+  align-self: flex-start;
+}
+.who-aim-i-text {
+  font-size: var(--font-size-l);
+  color: var(--color-font-base);
+}
+
+.home-page-container .title-line{
+  min-width: 420px;
+  max-width: 420px;
+  align-self: flex-start;
+}

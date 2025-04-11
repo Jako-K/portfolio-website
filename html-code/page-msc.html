@@ -1,0 +1,44 @@
+<div id="master-thesis-page-container">
+
+
+<!--  MASTER  -->
+  <div class="section">
+    <h2>Master's Thesis</h2>
+    <div class="title-line"></div>
+    Title: Music-to-Image Synthesis: Controlling Image Generation through Audio Modality
+  </div>
+
+  <div class="section">
+    <h4>In Short:</h4>
+    <ol>
+      <li>I Collaborated with Bang & Olufsen for my thesis.</li>
+      <li>I Designed a human-centered method linking music and images.</li>
+      <li>I Created datasets with 400,000 song-prompt pairs and 15,000 song-image pairs.</li>
+      <li>I Built an audio-to-image model to generate visuals from music.</li>
+      <li>I Developed a self-hosted labeling platform for song-to-image selection and feedback.</li>
+      <li>I Created an interactive, multi-module GUI for data exploration.</li>
+    </ol>
+  </div>
+
+  <div>
+    <img src="./public/thesis-master-overview-small.jpg" alt="Master overview"/>
+  </div>
+
+  <div>
+    <img src="./public/thesis-master-results.jpg" alt="Master results"/>
+  </div>
+
+<div class="section">
+    <h4>Publications</h4>
+    <p>
+      (Coming soon, 2025)
+    </p>
+</div>
+
+  <div class="section">
+    <h4>Abstract</h4>
+    <p>
+      Multimodal image generation has seen remarkable advancements in recent years, particularly in text-to-image and image-to-image synthesis. However, audio-to-image synthesis remains relatively underexplored, with the subfield of music-to-image (M2I) synthesis being especially neglected. Generating images from audio is challenging due to the fundamental modality gap between auditory (temporal) and visual (spatial) stimuli, and M2I synthesis adds even more complexity through its musical associations. The inherently subjective process of matching music with images is difficult to quantify and model due to emotional, cultural, and individual preferences. Progress in the field is also hindered by the lack of large-scale datasets and versatile M2I frameworks. This thesis aims to address these gaps by developing a robust M2I pipeline capable of generating contextually and emotionally relevant images using only music as input. Achieving this required solutions to 3 main challenges. Firstly, <em>quantifying how humans pair music with images</em>: This was achieved through the novel VAG-framework, which quantifies the relationship between music and images based on valence (V), arousal (A), and genre (G). The framework captures emotional and contextual aspects of M2I matching in a straightforward and scalable way. Human experiments conducted with 36 participants validated the framework’s ability to capture nuanced connections between audio and images. Secondly, <em>creating a large-scale dataset for M2I tasks</em>: Using the proposed VAG-framework, I constructed the BEATS (Bridging Emotions and Art through Sound) datasets. Combined, these include approximately 400,000 song-prompt pairs and 15,000 song-image pairs. The pairs are specifically aligned with human preferences, making them suitable for M2I tasks. BEATS addresses the lack of datasets and provide a foundation for a diverse set of M2I synthesis tasks. Thirdly, <em>designing, training, and deploying an end-to-end M2I pipeline</em>: I implemented a custom audio encoder and aligned it with CLIP, enabling M2I synthesis within a diffusion-based model. In addition to these 3 main contributions, I developed a labeling platform for conducting human-centered experiments and a multi-modular exploration GUI for interactive data analysis. In conclusion, the proposed M2I pipeline successfully generates visually coherent images that align with the emotional characteristics of the input music. Through a novel framework, large-scale datasets, and advanced AI models, this thesis builds a foundation for future cross-modal AI research in the field of M2I.
+    </p>
+  </div>
+</div>

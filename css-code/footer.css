@@ -1,0 +1,62 @@
+#footer-container {
+    padding: 10px 10px;
+    background-color: var(--color-background);
+    box-shadow: 0 -2px 3px rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icon-filter {
+    filter: invert(10%) brightness(450%);
+}
+
+#footer-container b {
+    font-weight: 500;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 199px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: var(--font-size-xs);
+    color: var(--color-font-base-light);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer-content img {
+    height: var(--font-size-xs);
+    width: auto;
+    margin-right: 3px;
+}
+
+.footer-content p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.icon-name {
+    transform: translateY(0px);
+}
+
+.icon-location {
+    transform: translateY(1px);
+}
+
+.icon-email {
+    transform: translateY(2px);
+}
+.icon-age {
+    transform: translateY(2px);
+}

@@ -1,0 +1,56 @@
+<div id="bachelor-thesis-page-container">
+
+<!--  BACHELOR  -->
+  <div class="section">
+    <h2>Bachelor's Thesis</h2>
+    <div class="title-line"></div>
+    Title: Detection of Safety-Related Objects on Bicycles and E-Scooters Using YOLO
+  </div>
+  <div class="section">
+    <h4>In Short:</h4>
+    <ol>
+      <li>We collected video footage of bike lanes from three locations in Copenhagen.</li>
+      <li>We created a dataset with various annotations and high-quality train/validation splits.</li>
+      <li>We implemented a custom YOLO model and successfully trained it to detect helmets.</li>
+      <li>We found indications that the 2022 e-scooter helmet law increased helmet use.</li>
+    </ol>
+  </div>
+
+
+  <div class="thesis-image-container">
+    <div>
+      <h5>1. Data Collection</h5>
+      <div>
+        <img src="./public/thesis-bachelor-left.jpg" alt="Bachelor location"/>
+      </div>
+    </div>
+    <div>
+      <h5>3. Helmet Detection</h5>
+      <div>
+        <img src="./public/thesis-bachelor-right.jpg" alt="Bachelor results"/>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h4>Related Publications:</h4>
+    <div id="bachelor-publications">
+      <ol>
+        <li><a href="https://www.sciencedirect.com/science/article/pii/S2950105924000044?via%3Dihub" target="_blank">Automated detection of bicycle helmets using deep learning</a></li>
+        <li><a href="https://injuryprevention.bmj.com/content/28/Suppl_2/A71.1" target="_blank">Using computer vision for the automated detection of cyclists' safety-related behaviour</a></li>
+        <li><a href="https://d-nb.info/1272312275/34#page=37" target="_blank">Automated detection of e-scooter helmet use with deep learning</a></li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="section">
+    <h4>Abstract</h4>
+    <p>
+      The world is undergoing rapid urbanization. This societal change presents unique challenges to our public and private transportation infrastructure. Cars are flexible but pollute and make insufficient use of space. At the same time, public means of mass transportation are better for the environment but lack the flexibility of individualized means of travel. The combined use of bicycles and e-scooters has the potential to provide flexibility at a lower environmental cost and in a space-efficient manner. More widespread adoption of these two transportation methods could benefit urban citizens and their cities. However, bicyclists and users of e-scooters have unique safety concerns that demand attention from public officials. Road safety researchers can help build a clear scientific foundation on which public officials can base their decisions, but this requires accurate data. Gathering safety-related data through observational studies is both time-consuming and resource-intensive. Hence, the primary goal of this thesis is to provide researchers with a tool that can automatically detect safety-related features of bicyclists and users of e-scooters. We centered our research around implementing a deep learning model based on the  ”You  Only  Look  Once”  (YOLO)  deep-learning object detection model. We implemented a custom-made model designed specifically to work on limited data and be computationally efficient. As part of this process,  the Urban Safety Dataset (USD) was created - a novel object detection dataset containing bounding box annotated images of safety-related features (use of helmets, phones, earbuds, and headphones) on both bicyclists and users of e-scooters. The dataset is primarily based on four weeks of video collected on urban bike lanes within central Copenhagen in  2021  and  2022. USD  contains  6305  labeled instances distributed over 4870  images. We implemented a set of image augmentations designed specifically for the Urban Safety Dataset. This included commonly used, but carefully selected augmentations and novel augmentations which were designed to emulate e.g. rain drops on camera lenses. A comprehensive study was conducted where we trained 22 different versions of our custom-made YOLO model. Of the 22 versions, 11 were trained on a 2-class setup of USD, where the models were tasked with detecting cyclists and e-scooters. The best model achieved an mAP@0.5 of 0.96. The remaining 11 models were trained on a 4-class setup of USD in which the models were trained to detect helmet use for both bicyclists and users of e-scooters. The best model achieved an mAP@0.5 of 0.73. We further conducted a limited-scale analysis of the impact of a mandatory helmet use law for e-scooters, which was passed at the beginning of 2022. Using only two locations of the USD, we found an increase in helmet use for riders of e-scooter from around 5\% before the law was passed to approximately 55\% after the law was passed. Generally, this thesis has made three primary contributions: The novel Urban Safety Dataset, a collection of diverse image augmentations designed for bike lane recordings, and a custom-made YOLO model capable of detecting safety-related objects on bicyclists and e-scooter riders with high accuracy.
+    </p>
+  </div>
+</div>
+
+

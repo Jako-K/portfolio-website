@@ -1,0 +1,15 @@
+.cv-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 1000px;
+  width: 1000px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: var(--base-padding-s);
+  margin: var(--header-offset-padding) auto 100px;
+}
+
+.cv-page-container ul{
+  margin-top: 0;
+}
